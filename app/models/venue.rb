@@ -4,13 +4,13 @@ class Venue < ApplicationRecord
   belongs_to :neighborhood
 
   has_many   :bookmarks,
-             :dependent => :destroy
+             dependent: :destroy
 
   # Indirect associations
 
   has_many   :users,
-             :through => :bookmarks,
-             :source => :user
+             through: :bookmarks,
+             source: :user
 
   # Validations
 
@@ -19,5 +19,4 @@ class Venue < ApplicationRecord
   def to_s
     name
   end
-
 end

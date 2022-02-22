@@ -17,5 +17,4 @@ class BookmarkResource < ApplicationResource
   belongs_to :dish
 
   # Indirect associations
-
 end
